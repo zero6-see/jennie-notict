@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jennie-notict</title>
+  <script src="https://kit.fontawesome.com/e516f97f7f.js" crossorigin="anonymous"></script>
+  <style>
+     html,body {
+     /* font-family: "sweet-sans-pro", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Roboto", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;*/
+     font-family: "sweet-sans-pro";
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ul,li{
+      list-style: none;
+    }
+    a{text-decoration: none;}
+    header{
+      position: absolute;
+      height: 185px;
+    }
+   header ul{
+   position: absolute;
+   top: 30px;
+   left: 1750px;
+   text-align: right;
+   z-index: 3;
+   }
+   header li a{
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.4;
+   }
+   header li.on a{
+    border-bottom: 2px solid #333;
+   }
+   main{
+    width: 80%;
+    height: 1000px;
+    margin: auto;
+    text-align: center;
+   }
+   main h1{
+    font-size: 50px;
+    padding-top: 80px;
+   }
+   main .subMenu{
+    width: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 50px;
+   }
+   main .search{
+    width: 500px;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 60px;
+   }
+   main .search input{
+    width: 460px;
+    border: none;
+    padding-bottom: 10px;
+    font-size: 16px;
+   }
+   main .search hr{
+    border: 1.5px solid #999;
+   }
+   main .txt{
+    width: 100%;
+    margin: auto;
+   }
+   main .txt table{
+    width: 90%;
+    margin: auto;
+    border-collapse:collapse;
+   }
+   main .txt table thead tr,
+   main .txt table tbody tr{
+    border-bottom: 1px solid #999;
+   }
+   main .txt table thead tr{
+    height: 40px;
+    text-align: left;
+   }
+   main .txt table tbody tr{
+    height: 80px;
+    text-align: left;
+   }
+   main .txt table thead tr th{
+    font-weight: normal;
+    font-size: 16px;
+    
+   }
+   main .txt table thead tr th:nth-of-type(1),
+   main .txt table thead tr th:nth-of-type(3){
+    width: 100px;
+   }
+   main .txt table thead tr th:nth-of-type(2){
+    width: 814px;
+   }
+   main .txt table tbody tr td:nth-of-type(1){
+    font-weight: bold;
+   }
+   
+
+   footer{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+   }
+   footer span{
+    color: #555;
+    font-size: 14px;
+   }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo"><img src="" alt=""></h1>
+    <ul class="menuList">
+      <li><a href="../oddatelier/index.html">ODDATELIER</a></li>
+      <li><a href="../artist/index.html">ARTIST</a></li>
+      <li  class="on"><a href="../notict/index.html">NOTICT</a></li>
+      <li><a href="../news/index.html">NEWS</a></li>
+    </ul>
+  </header>
+  <main>
+    <h1>NOTICT</h1>
+    <ul class="subMenu">
+      <li>ALL</li>
+      <li>ODDATELIER</li>
+      <li>ARTIST</li>
+    </ul>
+    <div class="search">
+      <input type="search" placeholder="SEARCH">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <hr>
+    </div>
+    <div class="txt">
+      <table>
+        <thead>
+          <tr>
+            <th>TOPIC</th>
+            <th>TITLE</th>
+            <th>DATE</th>
+          </tr>
+        </thead>
+      
+        <tbody>
+          <tr>
+            <th>OA</th>
+            <td>RECRUITING GRAPHIC AND VIDEO DESIGNER INTERNSHIP</td>
+            <td>2024.10.11</td>
+          </tr>
+        
+          <tr>
+            <th>OA</th>
+            <td>WELCOME TO OUR NEW NOTICE FEATURE</td>
+            <td>2024.09.09</td>
+          </tr>
+        
+        </tbody>
+      </table>
+    </div>   
+  </main>
+  <footer>
+    <span>© ODDATELIER. ALL RIGHTS RESERVED. ALL OF ODDATELIER’S CONTENT IS COPYRIGHTED</span>
+  </footer>
+  
+</body>
+</html>
